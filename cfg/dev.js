@@ -25,7 +25,11 @@ let config = Object.assign({}, baseConfig, {
   ],
   module: defaultSettings.getDefaultModules()
 });
-
+config.module.preLoaders.push({
+    test: /\.jsx?$/,
+    loader: 'eslint',
+    include: path.join(__dirname, 'src')
+});
 // Add needed loaders to the defaults here
 config.module.loaders.push({
   test: /\.(js|jsx)$/,
