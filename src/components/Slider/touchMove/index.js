@@ -113,7 +113,7 @@ const Slider = React.createClass({
         this.wrapper.removeEventListener('touchcancel', this.end);
     },
     render(){
-        return <div className="slider_wrapper" ref="wrapper" style={{width: this.props.sliderWidth}} >
+        return <div className="slider_wrapper" ref="wrapper" style={{width: this.props.sliderWidth+'px'}} >
             {this.getPreBtn()}
             <div ref="scroller" className="slide_scroller">
                 {this.state.children}

@@ -1,6 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import { Menu, Icon } from 'antd'
 import '../../styles/common.less'
 import './index.less'
 import Navigation from '../../components/navigation/Navigation'
@@ -9,9 +7,6 @@ import SliderMove from '../../components/Slider/touchMove'
 import ImageCard from '../../components/Slider/imageCard'
 //import {ImageCard, SliderMove} from 'bdwm_components'
 //alert(1111111111);
-
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
 
 const Components = React.createClass({
   getInitialState() {
